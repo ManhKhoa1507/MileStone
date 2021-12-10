@@ -4,3 +4,7 @@ services:
     image: sonarqube:lts
     ports:
       - 9000:9000
+    networks:
+      - mynetwork
+networks:
+  mynetwork:

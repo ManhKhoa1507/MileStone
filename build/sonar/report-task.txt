@@ -1,0 +1,6 @@
+projectKey=com.tom:sonarqube-MileStone
+serverUrl=http://172.20.0.1:9000
+serverVersion=8.9.3.48735
+dashboardUrl=http://172.20.0.1:9000/dashboard?id=com.tom%3Asonarqube-MileStone
+ceTaskId=AX2k0Q3qIuHBeMAnIKi3
+ceTaskUrl=http://172.20.0.1:9000/api/ce/task?id=AX2k0Q3qIuHBeMAnIKi3

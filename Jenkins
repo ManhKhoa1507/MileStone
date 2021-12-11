@@ -23,12 +23,6 @@ pipeline {
             }
         }
 
-        stage('Quality gate') {
-            steps {
-                waitForQualityGate abortPipeline: true
-            }
-        }
-
         stage('Build pom.xml from maven') {
             steps {
                 withMaven(maven : 'maven 3') {

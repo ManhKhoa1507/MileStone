@@ -27,9 +27,13 @@ pipeline {
             steps {
                 withMaven(maven : 'maven 3') {
                     sh 'ls server'
-                    sh 'gradle'
                     sh "mvn war:exploded -f 'server/pom.xml'"
                 }
+            }
+        }
+        stage('Deploy to k8s') {
+            steps {
+                sh 'mvn:k8s:build'
             }
         }
     }

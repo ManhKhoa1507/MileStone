@@ -18,8 +18,7 @@ pipeline {
         stage('SonnarQube Scanner') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh 'chmod +x gradlew'
-                    sh './gradlew sonarqube'
+                    sh 'mvn clean verify sonar:sonar -Dsonar.login=5d3f8f97658f4c6e9df436f2babad15fe6dda55e'
                 }
             }
         }
